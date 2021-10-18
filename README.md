@@ -3,3 +3,11 @@
 ### `docker-compose-nodejs-example` is a simple docker-compose configuration with Node JS express app
 <br>
 The project explains how to bind local development directory with container dir, so you don't have to rebuild container after made changes to app source code
+<br>
+<br>
+
+- to build project run:
+`docker-compose build`
+
+-  to run: 
+`docker-compose up`
