@@ -1,0 +1,12 @@
+# "web" - the service name
+web:
+  # build files from current directory
+  build: . 
+  volumes:
+    # bind local development directory "./app" with container directory "/var/lib/app"
+    # in this example we bind only app source code (package.json is copied only in build stage)
+    - "./app:/var/lib/app"
+  ports:
+    # 3030 is the host port
+    # 3000 is the port which app is leasing on docker container 
+    - "3030:3000"
