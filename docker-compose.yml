@@ -4,7 +4,6 @@ web:
   build: . 
   volumes:
     # bind local development directory "./app" with container directory "/var/lib/app"
-    # in this example we bind only app source code (package.json is copied only in build stage)
     - "./app:/var/lib/app"
   ports:
     # 3030 is the host port

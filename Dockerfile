@@ -9,6 +9,7 @@ RUN mkdir /src
 WORKDIR /var/lib
 
 # copy "app/package.json" from local development directory to "/var/lib/package.json" on docker container
+# "app/package.json" is copied to perform install packages before run container
 ADD app/package.json /var/lib/package.json
 
 # run command to prepare and run application
